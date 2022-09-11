@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="content">
+        <header>
+          <h1 id="title">
+            What is your favourite coffee?
+          </h1>
+          <p id="description">
+            In this survey form you will find different types of coffee and their preparations, tell us which one is your favorite?
+          </p>
+        </header>
+        <form action="" id="survey-form">
+          <label for="name" id="name-label">Name</label>
+          <input type="text" name="name" id="name" class="color-second" placeholder="Enter your name" required />
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" name="email" id="email" class="color-second" placeholder="youremail@email.com" required />
+          <label for="number" id="number-label">Age:</label>
+          <input type="number" name="number" value="age" min="10" max="99" id="number" class="color-second" placeholder="Age"/>
+      <!--   profession   -->
+          <div class="role__pro">
+            <p>With what function do you find out?</p>
+            <select name="role" id="dropdown" class="color-second">
+              <option disabled selected value >Select current rol</option>
+              <option value="student">Student</option>
+              <option value="engineer">Engineer</option>
+              <option value="doctor">Doctor</option>
+              <option value="programmer">Programmer</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+      <!--  radio buttons    -->
+          <div class="coffee">
+            <p>What espresso do you prefer?</p>
+            <label ><input type="radio" name="coffee" value="cuatro" checked /> Espresso</label>
+                  <label ><input type="radio" name="coffee" value="tres" />  Doppio espresso</label>
+              <label ><input type="radio" name="coffee" value="dos" /> Ristretto</label>
+              <label ><input type="radio" name="coffee" value="uno" /> Lungo</label>
+          </div>
+      <!--   with milk   -->
+              <div class="milk">
+                  <p>What other variant do you prefer?</p>
+                  <label for="withmilk"><input type="checkbox" value="capuccinoA" /> Coffee with milk</label>
+                  <label for=""><input type="checkbox" value="cappuccino" /> Cappuccino</label>
+                  <label for=""><input type="checkbox" value="cappuccinof" /> Cappuccino forte</label>
+                  <label for=""><input type="checkbox" value="frappuccino" /> Frappuccino</label>
+              </div>
+          <textarea name="" id="texarea" class="color-second" placeholder="Enter your comment..."></textarea>
+              <button id="submit">
+              Submit
+          </button>
+        </form>
+      </section>
+</body>
+</html>

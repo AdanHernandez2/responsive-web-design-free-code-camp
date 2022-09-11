@@ -1,0 +1,98 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Poppins', arial;
+	font-size: 1rem;
+	background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Fvector-gratis%2Fgranos-cafe-hojas-espresso-cappuccino-vector-patrones-fisuras-estilo-dibujo_53562-8347.jpg&f=1&nofb=1");
+	background-repeat: repeat;
+	margin:0;
+}
+:root {
+	--marron: #583227;
+	--coffee: #804e43;
+	--white: #ffff;
+}
+#content {
+	width:100%;
+	max-width: 600px;
+	background-color: var(--white);
+	padding: 10px 15px 10px 15px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: -6px 9px 28px -10px rgba(0,0,0,0.49);
+-webkit-box-shadow: -6px 9px 28px -10px rgba(0,0,0,0.49);
+-moz-box-shadow: -6px 9px 28px -10px rgba(0,0,0,0.49);
+}
+header #title {
+	text-align:center;
+	color:var(--marron);
+}
+header #description {	
+	font-weight: 600;
+	text-align:center;
+	color: var(--coffee);
+}
+#survey-form {
+	text-align:left;
+	display:flex;
+	flex-direction:column;
+}
+#survey-form label {
+	margin: 0 0 10px 0;
+	font-weight: 600;
+	color: var(--marron);
+}
+#survey-form input {
+	padding: 0.60rem 0.65rem;
+	margin: 0 0 10px 0;
+	border:none;
+	border-radius: 5px;
+	border-bottom: 1px solid var(--marron);
+}
+
+.role__pro p, .coffee p, .milk p {
+	font-weight:600;
+	color:var(--marron);
+}
+.role__pro #dropdown {
+	width:100%;
+	color:#495057;
+	padding: 0.60rem 0.65rem;
+	border-radius: 5px;
+}
+.coffee {
+	display:flex;
+	flex-direction:column;
+}
+.milk {
+	display:flex;
+	flex-direction:column;
+}
+#texarea {
+	width:100%;
+	min-height:120px;
+	padding: 0.67rem;
+	resize: vertical;
+	border:none;
+	border-bottom: 1px solid var(--marron);
+	border-radius: 5px;
+	background-clip: padding-box;
+}
+.color-second:focus {
+	background-clip: padding-box;
+}
+.color-second:focus {
+	border-color:var(--coffee);
+	outline: 0;
+}
+#submit {
+	font-weight:600;
+	margin: 20px 0 20px 0;
+	padding: 0.68rem;
+	cursor:pointer;
+	border:none;
+	border-radius:5px;
+	color:var(--white);
+	background-color: var(--marron);
+}
