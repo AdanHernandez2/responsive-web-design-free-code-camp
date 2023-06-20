@@ -1,0 +1,212 @@
+:root {
+    --azul:#026fff;
+    --blanco: #fff;
+    --back-one: #151515;
+    --back-two:#111;
+    --overlay:rgba(0,0,0,0.4);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    font-family: Roboto;
+}
+/** Globales **/
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    margin: 0 0 2.5rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+img {
+    width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: var(--back-one);
+}
+/** Menu **/
+.nav-principal {
+    background-color: var(--back-one);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.nav-principal ul {
+    display: flex;
+}
+.nav-principal ul li {
+    list-style: none;
+}
+.nav-principal a {
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--blanco);
+    display: block;
+}
+.nav-principal a:hover {
+    background-color: #026fff;
+}
+.welcome-section {
+    background-color: var(--azul);
+    background-image: url(https://res.cloudinary.com/www-scriptdan-xyz/image/upload/v1685547426/imagenes-freecodecamp/code_o4mgin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:var(--blanco);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+}
+.welcome-section::before {
+    content: '';
+    height:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    position:absolute;
+}
+.wellcome-section__title {
+    position: relative;
+    z-index: 1;
+}
+/** Proyectos **/
+.projects {
+    text-align: center;
+    padding: 6rem 0;
+    background-color: var(--back-one);
+    color:var(--blanco);
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.projects__card img {
+    width: 100%;
+}
+.projects__card a {
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: var(--azul);
+    border:1px solid var(--azul);
+    border-top:none;
+    border-radius: 0 0 2rem 0;
+}
+.projects__card a:hover {
+    background-color: var(--azul);
+    color: var(--blanco);
+    border-radius: 0 0 2rem 0;
+}
+/** Footer **/
+.footer {
+    text-align: center;
+    padding-top:2rem;
+    background-color: var(--back-one);
+    color:var(--blanco);
+}
+.footer h2 {
+    margin-bottom: .5rem;
+}
+.footer p {
+    font-size: 1.8rem;
+}
+.footer > p {
+    padding: 1rem;
+    background-color: var(--back-two);
+}
+.social-icon {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 600px) { 
+    .social-icon {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+.social-icon .icon {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10rem;
+    background-color: var(--blanco);
+    margin: 2rem;
+    text-align: center;
+    font-size: 4rem;
+    line-height: 8rem;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.social-icon .icon:hover {
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--blanco);
+}
+.icon:hover i {
+    color: var(--blanco);
+}
+.icon .fa-facebook-f {
+    color:#1A6ED8;
+}
+.fb:hover {
+    background-color: #1A6ED8;
+}
+.icon .fa-twitter {
+    color:#1DA1F2;
+}
+.tw:hover {
+    background-color: #1DA1F2;
+}
+.icon .fa-codepen {
+    color:var(--back-two);
+}
+.cp:hover {
+    background-color: var(--back-two);
+}
+.icon .fa-github {
+    color:var(--back-two);
+}
+.git:hover {
+    background-color: var(--back-two);
+}
